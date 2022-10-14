@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="codahale">
+        <createTable tableName="people">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="fullName" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="jobTitle" type="varchar(255)"/>
+            <column name="yearBorn" type="int"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="gui">
+        <createTable tableName="dispositivo">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="tipo" type="varchar(255)"/>
+            <column name="sensores" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="gui">
+        <createTable tableName="motorista">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="cnh" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="4" author="gui">
+        <createTable tableName="veiculo">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="numeroPlaca" type="varchar(255)"/>
+            <column name="tipoVeiculo" type="varchar(255)"/>
+            <column name="tipoCarga" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="5" author="gui">
+        <createTable tableName="administrador">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="credencial" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="6" author="gui">
+        <createTable tableName="viagem">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="tempo" type="varchar(255)"/>
+            <column name="distancia" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="7" author="gui">
+        <createTable tableName="telefone">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="codigoDDD" type="varchar(255)"/>
+            <column name="numeroTelefone" type="varchar(255)"/>
+            <column name="tipo" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="8" author="gui">
+        <createTable tableName="pessoa">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nome" type="varchar(255)"/>
+            <column name="cpf" type="varchar(255)"/>
+            <column name="idade" type="varchar(255)"/>
+            <column name="telefone" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
