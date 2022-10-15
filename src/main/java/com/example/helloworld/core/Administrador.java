@@ -5,6 +5,10 @@ import javax.persistence.Table;
 import javax.persistence.NamedQuery;
 @Entity
 @Table(name = "Administrador")
+@NamedQuery(
+    name = "com.example.helloworld.core.Administrador.findAll",
+    query = "SELECT a FROM a"
+)
 public class Administrador {
     
 }
