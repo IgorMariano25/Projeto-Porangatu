@@ -53,4 +53,18 @@ public class Administrador {
     public void getJobTitle(String jobTitle){
         this.jobTitle = jobTitle;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Administrador)) {
+            return false;
+        }
+        Administrador administrador = (Administrador) o;
+        return id == administrador.id && 
+                Objects.equals(firstName, administrador.firstName) && 
+                Objects.equals(lastName, administrador.lastName) && 
+                Objects.equals(jobTitle, administrador.jobTitle);
+    }
 }
