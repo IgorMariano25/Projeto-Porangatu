@@ -30,6 +30,10 @@ public class Administrador {
 
     public Administrador() {
     }
-        
+
+    public Administrador(String firstName, String lastName, String jobTitle){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.jobTitle = jobTitle;
     }
 }
