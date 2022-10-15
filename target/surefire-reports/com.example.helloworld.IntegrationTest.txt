@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.helloworld.IntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.174 s - in com.example.helloworld.IntegrationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.927 s - in com.example.helloworld.IntegrationTest
