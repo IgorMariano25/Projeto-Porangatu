@@ -12,4 +12,8 @@ import javax.persistence.NamedQuery;
 )
 public class Dispositivo {
     
+
+    public Dispositivo() {
+    }
+
 }
