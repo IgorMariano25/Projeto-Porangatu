@@ -67,4 +67,9 @@ public class Administrador {
                 Objects.equals(lastName, administrador.lastName) && 
                 Objects.equals(jobTitle, administrador.jobTitle);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, jobTitle);
+    }
 }
