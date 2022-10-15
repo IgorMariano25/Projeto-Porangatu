@@ -83,4 +83,21 @@
             <column name="telefone" type="varchar(255)"/>
         </createTable>
     </changeSet>
+    <changeSet id="9" author="gui">
+            <createTable tableName="motorista_dispositivo">
+        <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="id_motorista" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_id_motorista" references="motorista(id)"/>
+            </column>
+            <column name="id_dispositivo" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_id_dispositivo" references="dispositivo(id)"/>
+            </column>
+            <column name="dt_inicio" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dt_fim" type="date"/>
+        </createTable>
+    </changeSet>    
 </databaseChangeLog>
