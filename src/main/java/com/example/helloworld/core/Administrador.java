@@ -40,4 +40,7 @@ public class Administrador {
     public void setId(long id){
         this.id = id;
     }
+
+    public String getFirstName(){
+        this.firstName = firstName;
 }
