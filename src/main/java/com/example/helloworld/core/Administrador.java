@@ -12,5 +12,5 @@ import javax.persistence.Id;
     query = "SELECT a FROM a"
 )
 public class Administrador {
-    
+    @Id
 }
