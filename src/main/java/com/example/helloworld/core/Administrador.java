@@ -75,9 +75,8 @@ public class Administrador {
 
     @Override
     public String toString() {
-        return "{" +
-            ", firstName='" + getFirstName() + "'" +
-            ", lastName='" + getLastName() + "'" +
-            ", jobTitle='" + getJobTitle() + "'" +
-            "}";
-}
+        String msg = "Administrator first name: " + this.firstName;
+               msg += "Administrator last name: " + this.lastName;
+               msg += "Administrator jobTitle: " + this.jobTitle;
+        return msg;
+    }
