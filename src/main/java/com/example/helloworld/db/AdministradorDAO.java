@@ -12,6 +12,10 @@ public class AdministradorDAO extends AbstractDAO<Administrador> {
         super(factory);
     }
 
+    public Optional<Administrador> findById(Long id){
+        return Optional.ofNullable(get(id));
+    }
+
     public Administrador create(Administrador administrador){
         return persist(administrador);
     }
