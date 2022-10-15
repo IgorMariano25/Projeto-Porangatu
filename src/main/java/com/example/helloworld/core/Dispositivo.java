@@ -6,7 +6,10 @@ import javax.persistence.NamedQuery;
 
 @Entity
 @Table(name = "Dispositivo")
-
+@NamedQuery(
+    name = "com.example.helloworld.core.Dispositivo.findAll",
+    query = "SELECT d FROM d"
+)
 public class Dispositivo {
     
 }
