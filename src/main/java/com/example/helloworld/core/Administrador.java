@@ -19,7 +19,7 @@ public class Administrador {
     private long id;
 
     @Column(name = "firstName", nullable = false)
-    private String firstname;
+    private String firstName;
 
     @Column(name = "lastname", nullable = false)
     private String lastname;
