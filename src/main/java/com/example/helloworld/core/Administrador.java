@@ -29,6 +29,7 @@ public class Administrador {
     private String jobTitle;
 
     public Administrador() {
+    }
         
     }
 }
