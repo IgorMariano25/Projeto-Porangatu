@@ -18,7 +18,7 @@ public class Administrador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "firstname", nullable = false)
+    @Column(name = "firstName", nullable = false)
     private String firstname;
 
     @Column(name = "lastname", nullable = false)
