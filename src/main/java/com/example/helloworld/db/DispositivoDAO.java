@@ -5,4 +5,7 @@ import io.dropwizard.hibernate.AbstractDAO;
 
 import org.hibernate.SessionFactory;
 public class DispositivoDAO extends AbstractDAO<Dispositivo>{
+    public DispositivoDAO(SessionFactory factory){
+        super(factory);
+    }
 }
