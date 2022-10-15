@@ -21,7 +21,7 @@ public class Administrador {
     @Column(name = "firstName", nullable = false)
     private String firstName;
 
-    @Column(name = "lastname", nullable = false)
+    @Column(name = "lastName", nullable = false)
     private String lastname;
 
     @Column(name = "jobTitle", nullable = false)
