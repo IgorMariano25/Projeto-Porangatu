@@ -48,4 +48,8 @@ public class Administrador {
     public void getLastName(String lastName){
         this.lastName = lastName;
     }
+
+    public void getJobTitle(String jobTitle){
+        this.jobTitle = jobTitle;
+    }
 }
