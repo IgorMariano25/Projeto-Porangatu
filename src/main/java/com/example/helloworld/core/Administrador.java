@@ -20,4 +20,7 @@ public class Administrador {
 
     @Column(name = "firstname", nullable = false)
     private String firstname;
+
+    @Column(name = "lastname", nullable = false)
+    
 }
