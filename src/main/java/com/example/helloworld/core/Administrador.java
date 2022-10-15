@@ -23,4 +23,6 @@ public class Administrador {
 
     @Column(name = "lastname", nullable = false)
     private String lastname;
+
+    @Column(name = "jobTitle", nullable = false)
 }
