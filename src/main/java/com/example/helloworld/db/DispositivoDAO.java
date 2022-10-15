@@ -19,4 +19,8 @@ public class DispositivoDAO extends AbstractDAO<Dispositivo>{
     public Dispositivo create(Dispositivo dispositivo){
         return persist(dispositivo);
     }
+
+    public List<Dispositivo> findAll() {
+        return list(namedTypedQuery("com.example.helloworld.core.Dispositivo.findAll"));
+    }
 }
