@@ -14,4 +14,8 @@ public class AdministradorDAO extends AbstractDAO<Administrador> {
     public Administrador create(Administrador administrador){
         return persist(administrador);
     }
+
+    public List<Administrador> findAll() {
+        return list(namedTypedQuery("com.example.helloworld.core.Administrador.findAll"));
+    }
 }
