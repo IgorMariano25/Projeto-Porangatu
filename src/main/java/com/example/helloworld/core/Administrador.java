@@ -72,4 +72,12 @@ public class Administrador {
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, jobTitle);
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+            ", firstName='" + getFirstName() + "'" +
+            ", lastName='" + getLastName() + "'" +
+            ", jobTitle='" + getJobTitle() + "'" +
+            "}";
 }
