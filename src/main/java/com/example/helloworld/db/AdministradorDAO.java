@@ -5,4 +5,7 @@ import io.dropwizard.hibernate.AbstractDAO;
 
 import java.util.List;
 public class AdministradorDAO extends AbstractDAO<Administrador> {
+    public Administrador create(Administrador administrador){
+        return persist(administrador);
+    }
 }
