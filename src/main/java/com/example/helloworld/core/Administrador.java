@@ -43,4 +43,9 @@ public class Administrador {
 
     public void getFirstName(String firstName){
         this.firstName = firstName;
+    }
+
+    public void getLastName(String lastName){
+        this.lastName = lastName;
+    }
 }
