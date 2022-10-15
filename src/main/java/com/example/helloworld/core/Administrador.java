@@ -41,6 +41,6 @@ public class Administrador {
         this.id = id;
     }
 
-    public String getFirstName(){
+    public void getFirstName(String firstName){
         this.firstName = firstName;
 }
