@@ -22,7 +22,7 @@ public class Administrador {
     private String firstName;
 
     @Column(name = "lastName", nullable = false)
-    private String lastname;
+    private String lastName;
 
     @Column(name = "jobTitle", nullable = false)
 }
