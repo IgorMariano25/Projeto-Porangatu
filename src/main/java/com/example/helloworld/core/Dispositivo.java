@@ -5,6 +5,7 @@ import javax.persistence.Table;
 import javax.persistence.NamedQuery;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 @Entity
 @Table(name = "Dispositivo")
@@ -13,6 +14,9 @@ import javax.persistence.GeneratedValue;
     query = "SELECT d FROM d"
 )
 public class Dispositivo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     
 
     public Dispositivo() {
