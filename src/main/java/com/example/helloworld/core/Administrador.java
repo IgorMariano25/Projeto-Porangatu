@@ -80,3 +80,4 @@ public class Administrador {
                msg += "Administrator jobTitle: " + this.jobTitle;
         return msg;
     }
+}
