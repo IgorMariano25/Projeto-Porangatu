@@ -36,4 +36,8 @@ public class Administrador {
         this.lastName = lastName;
         this.jobTitle = jobTitle;
     }
+
+    public void setId(long id){
+        this.id = id;
+    }
 }
