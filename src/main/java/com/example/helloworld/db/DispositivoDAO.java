@@ -15,4 +15,8 @@ public class DispositivoDAO extends AbstractDAO<Dispositivo>{
     public Optional<Dispositivo> findById(Long id){
         return Optional.ofNullable(get(id));
     }
+
+    public Dispositivo create(Dispositivo dispositivo){
+        return persist(dispositivo);
+    }
 }
