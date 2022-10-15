@@ -11,4 +11,8 @@ public class DispositivoDAO extends AbstractDAO<Dispositivo>{
     public DispositivoDAO(SessionFactory factory){
         super(factory);
     }
+
+    public Optional<Dispositivo> findById(Long id){
+        return Optional.ofNullable(get(id));
+    }
 }
