@@ -13,6 +13,7 @@ import javax.ws.rs.GET;
 import java.util.List;
 
 @Path("/Motorsita")
+@Produces(MediaType.APPLICATION_JSON)
 public class MotoristaResource {
     
 }
