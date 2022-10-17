@@ -25,4 +25,8 @@ public class Veiculo {
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
 
+
+    public Veiculo() {
+    }
+
 }
