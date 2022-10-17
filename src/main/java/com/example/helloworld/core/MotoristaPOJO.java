@@ -28,4 +28,8 @@ public class MotoristaPOJO {
     public String getCnh() {
         return this.cnh;
     }
+
+    public void setCnh(String cnh) {
+        this.cnh = cnh;
+    }
 }
