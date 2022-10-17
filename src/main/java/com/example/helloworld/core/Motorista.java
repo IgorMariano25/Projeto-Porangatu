@@ -17,4 +17,5 @@ import java.util.Objects;
 )
 public class Motorista {
     @Id
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
 }
