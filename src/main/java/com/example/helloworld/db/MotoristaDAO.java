@@ -6,6 +6,8 @@ import io.dropwizard.hibernate.AbstractDAO;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
+import java.util.Optional;
+
 public class MotoristaDAO {
     
 }
