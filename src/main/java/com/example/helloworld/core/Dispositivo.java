@@ -25,6 +25,8 @@ public class Dispositivo {
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
 
+    // TO DO getters
+
     public Dispositivo() {
     }
 
