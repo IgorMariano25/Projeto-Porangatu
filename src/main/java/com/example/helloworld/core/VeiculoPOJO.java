@@ -44,4 +44,8 @@ public class VeiculoPOJO {
     public void setModeloVeiculo(String modeloVeiculo) {
         this.modeloVeiculo = modeloVeiculo;
     }
+
+    public String getMotoristaVeiculo() {
+        return this.motoristaVeiculo;
+    }
 }
