@@ -24,4 +24,8 @@ public class DispositivoPOJO {
     public void setQuantidadeSensores(int quantidadeSensores) {
         this.quantidadeSensores = quantidadeSensores;
     }
+
+    public String getNomeMotoristaResponsavel() {
+        return this.nomeMotoristaResponsavel;
+    }
 }
