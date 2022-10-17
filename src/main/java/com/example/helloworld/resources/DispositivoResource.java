@@ -24,4 +24,5 @@ public class DispositivoResource {
     }
 
     @POST
+    @UnitOfWork
 }
