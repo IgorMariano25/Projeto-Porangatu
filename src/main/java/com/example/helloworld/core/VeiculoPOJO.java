@@ -14,10 +14,10 @@ public class VeiculoPOJO {
     String modeloVeiculo;
     String motoristaVeiculo;
 
-    public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modeloVeiculo, String motorista) {
+    public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modeloVeiculo, String motoristaVeiculo) {
         this.placaVeiculo = placaVeiculo;
         this.tipoVeiculo = tipoVeiculo;
         this.modeloVeiculo = modeloVeiculo;
-        this.motorista = motorista;
+        this.motoristaVeiculo = motoristaVeiculo;
     }
 }
