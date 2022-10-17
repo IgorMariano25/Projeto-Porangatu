@@ -16,8 +16,10 @@ import java.util.List;
 @Path("/Dispositivo")
 @Produces(MediaType.APPLICATION_JSON)
 public class DispositivoResource {
+
+    private final DispositivoDAO dispositivoDAO;
     
-    public DispositivoResource(DispositivoDAO dispositivo) {
+    public DispositivoResource(DispositivoDAO dispositiv) {
         this.dispositivoDAO = dispositivoDAO;
     }
 }
