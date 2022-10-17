@@ -19,4 +19,8 @@ public class Motorista {
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private long id;
+
+    @column(name = "", nullable =  false)
+    @column(name = "", nullable =  false)
+    @column(name = "", nullable =  false)
 }
