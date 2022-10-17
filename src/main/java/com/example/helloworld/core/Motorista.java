@@ -35,4 +35,9 @@ public class Motorista {
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
-}
+
+    @Override
+    public String toString() {
+        String msg = "";
+        return msg;
+    }
