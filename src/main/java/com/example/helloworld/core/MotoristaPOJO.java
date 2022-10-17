@@ -24,4 +24,8 @@ public class MotoristaPOJO {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getCnh() {
+        return this.cnh;
+    }
 }
