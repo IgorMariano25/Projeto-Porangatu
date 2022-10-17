@@ -13,6 +13,7 @@ import javax.ws.rs.GET;
 import java.util.List;
 
 @Path("/Veiculo")
+@Produces(MediaType.APPLICATION_JSON)
 public class VeiculoResource {
     
 }
