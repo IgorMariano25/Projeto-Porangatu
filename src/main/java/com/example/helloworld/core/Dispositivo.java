@@ -20,6 +20,7 @@ public class Dispositivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    // TO DO
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
