@@ -18,6 +18,12 @@ public class AdministradorPOJO {
         this.lastName = lastName;
         this.jobTitle = jobTitle;
     }
+
     public String getFirstName() {
         return this.firstName;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+}
