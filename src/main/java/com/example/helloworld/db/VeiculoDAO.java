@@ -11,4 +11,8 @@ public class VeiculoDAO extends AbstractDAO<Veiculo>{
     public VeiculoDAO(SessionFactory factory) {
         super(factory);
     }
+
+    public Optional<Veiculo> findById(Long id){
+        return Optional.ofNullable(get(id));
+    }
 }
