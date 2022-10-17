@@ -27,4 +27,6 @@ public class MotoristaResource {
     public Motorista createMotorista(@Valid Motorista motorista) {
         return motoristaDAO.create(motorista);
     }
+
+    @GET
 }
