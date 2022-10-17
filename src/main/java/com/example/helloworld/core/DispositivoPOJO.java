@@ -16,4 +16,8 @@ public class DispositivoPOJO {
         this.quantidadeSensores = quantidadeSensores;
         this.nomeMotoristaResponsavel = nomeMotoristaResponsavel;
     }
+
+    public int getQuantidadeSensores() {
+        return this.quantidadeSensores;
+    }
 }
