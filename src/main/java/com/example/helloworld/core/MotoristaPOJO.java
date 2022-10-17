@@ -11,4 +11,9 @@ public class MotoristaPOJO {
 
     String nome;
     String cnh;
+
+    public MotoristaPOJO(String nome, String cnh) {
+        this.nome = nome;
+        this.cnh = cnh;
+    }
 }
