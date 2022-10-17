@@ -21,4 +21,6 @@ public class MotoristaResource {
     public MotoristaResource(MotoristaDAO motoristaDAO){
         this.motoristaDAO = motoristaDAO;
     }
+
+    @POST
 }
