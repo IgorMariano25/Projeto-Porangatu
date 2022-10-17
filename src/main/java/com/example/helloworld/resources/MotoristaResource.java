@@ -30,4 +30,7 @@ public class MotoristaResource {
 
     @GET
     @UnitOfWork
+    public List<Motorista> listaMotoristas() {
+        return motoristaDAO.findAll();
+    }
 }
