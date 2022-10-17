@@ -25,10 +25,6 @@ public class Dispositivo {
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
 
-    // TO DO getters
-    // TO DO equals
-    // TO DO hashCode
-
     public Dispositivo() {
     }
 
