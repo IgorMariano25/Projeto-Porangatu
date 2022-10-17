@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.NamedQuery;
 import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
 
 public class Motorista {
     
