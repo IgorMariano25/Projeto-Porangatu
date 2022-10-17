@@ -34,5 +34,4 @@ public class DispositivoResource {
     public List<Dispositivo> listaDispositivos() {
         return dispositivoDAO.findAll();
     }
-
 }
