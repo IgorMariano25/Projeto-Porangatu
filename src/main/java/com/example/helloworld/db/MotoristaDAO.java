@@ -16,4 +16,8 @@ public class MotoristaDAO extends AbstractDAO<Motorista>{
     public Optional<Motorista> findById(Long id) {
         return Optional.ofNullable(get(id));
     }
+
+    public Motorista create(Motorista motorista) {
+        return persist(motorista);
+    }
 }
