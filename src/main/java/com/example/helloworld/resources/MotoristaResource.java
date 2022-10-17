@@ -24,4 +24,7 @@ public class MotoristaResource {
 
     @POST
     @UnitOfWork
+    public Motorista createMotorista(@Valid Motorista motorista) {
+        return motoristaDAO.create(motorista);
+    }
 }
