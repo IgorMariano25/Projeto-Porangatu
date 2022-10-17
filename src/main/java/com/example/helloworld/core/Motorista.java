@@ -24,4 +24,8 @@ public class Motorista {
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
     @column(name = "", nullable =  false)
+
+    public Motorista() {
+    }
+
 }
