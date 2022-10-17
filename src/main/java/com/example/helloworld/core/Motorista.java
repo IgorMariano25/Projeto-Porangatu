@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Column;
 import java.util.Objects;
 
+@Entity
 public class Motorista {
     
 }
