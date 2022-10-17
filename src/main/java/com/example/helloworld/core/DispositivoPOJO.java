@@ -20,4 +20,8 @@ public class DispositivoPOJO {
     public int getQuantidadeSensores() {
         return this.quantidadeSensores;
     }
+
+    public void setQuantidadeSensores(int quantidadeSensores) {
+        this.quantidadeSensores = quantidadeSensores;
+    }
 }
