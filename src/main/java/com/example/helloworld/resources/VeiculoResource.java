@@ -27,4 +27,6 @@ public class VeiculoResource {
     public Veiculo createVeiculo(@Valid Veiculo veiculo) {
         return veiculoDAO.create(veiculo);
     }
+
+    @GET
 }
