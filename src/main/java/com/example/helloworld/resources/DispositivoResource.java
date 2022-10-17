@@ -1,7 +1,8 @@
 package com.example.helloworld.resources;
 
-import com.example.helloworld.core.Administrador;
-import com.example.helloworld.db.AdministradorDAO;
+import com.example.helloworld.core.Dispositivo;
+import com.example.helloworld.db.DispositivoDAO;
+
 import io.dropwizard.hibernate.UnitOfWork;
 
 import javax.ws.rs.Path;
@@ -16,4 +17,7 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 public class DispositivoResource {
     
+    public DispositivoResource(DispositivoDAO dispositivo) {
+        this.dispositivoDAO = dispositivoDAO;
+    }
 }
