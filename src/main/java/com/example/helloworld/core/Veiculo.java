@@ -33,6 +33,8 @@ public class Veiculo {
         this.id = id;
     }
 
+    // TO DO getters
+
     @Override
     public String toString() {
         String msg = "";
