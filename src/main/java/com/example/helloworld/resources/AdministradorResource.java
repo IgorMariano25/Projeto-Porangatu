@@ -24,4 +24,7 @@ public class AdministradorResource {
 
         @POST
         @UnitOfWork
+        public List<Administrador> listaAdministradors() {
+            return administradorDAO.findAll();
+        }
 }
