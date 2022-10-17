@@ -13,7 +13,10 @@ public class AdministradorPOJO {
     String lastName;
     String jobTitle;
 
-    public AdministradorPOJO() {
+    public AdministradorPOJO(String firstName, String lastName, String jobTitle) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.jobTitle = jobTitle;
     }
 
 }
