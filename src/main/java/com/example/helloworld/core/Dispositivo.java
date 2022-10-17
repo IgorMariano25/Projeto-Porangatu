@@ -27,6 +27,7 @@ public class Dispositivo {
 
     // TO DO getters
     // TO DO equals
+    // TO DO hashCode
 
     public Dispositivo() {
     }
