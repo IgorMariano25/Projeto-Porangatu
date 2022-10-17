@@ -16,4 +16,5 @@ import java.util.List;
 @Produces(MediaType.APPLICATION_JSON)
 public class MotoristaResource {
     
+    private final MotoristaDAO motoristaDAO;
 }
