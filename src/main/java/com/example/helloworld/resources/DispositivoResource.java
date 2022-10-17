@@ -22,4 +22,6 @@ public class DispositivoResource {
     public DispositivoResource(DispositivoDAO dispositiv) {
         this.dispositivoDAO = dispositivoDAO;
     }
+
+    @POST
 }
