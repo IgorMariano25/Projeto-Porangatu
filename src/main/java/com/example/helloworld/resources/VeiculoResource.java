@@ -18,19 +18,19 @@ public class VeiculoResource {
     
     private final VeiculoDAO veiculoDAO;
 
-    public VeiculoResource(VeiculoDAO veiculoDAO){
-        this.veiculoDAO = veiculoDAO;
-    }
+        public VeiculoResource(VeiculoDAO veiculoDAO){
+            this.veiculoDAO = veiculoDAO;
+        }
 
-    @POST
-    @UnitOfWork
-    public Veiculo createVeiculo(@Valid Veiculo veiculo) {
-        return veiculoDAO.create(veiculo);
-    }
+        @POST
+        @UnitOfWork
+        public Veiculo createVeiculo(@Valid Veiculo veiculo) {
+            return veiculoDAO.create(veiculo);
+        }
 
-    @GET
-    @UnitOfWork
-    public List<Veiculo> listaVeiculo() {
-        return veiculoDAO.findAll();
-    }
+        @GET
+        @UnitOfWork
+        public List<Veiculo> listaVeiculo() {
+            return veiculoDAO.findAll();
+        }
 }
