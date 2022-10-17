@@ -28,4 +28,8 @@ public class DispositivoPOJO {
     public String getNomeMotoristaResponsavel() {
         return this.nomeMotoristaResponsavel;
     }
+
+    public void setNomeMotoristaResponsavel(String nomeMotoristaResponsavel) {
+        this.nomeMotoristaResponsavel = nomeMotoristaResponsavel;
+    }
 }
