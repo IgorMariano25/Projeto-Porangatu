@@ -30,4 +30,7 @@ public class VeiculoResource {
 
     @GET
     @UnitOfWork
+    public List<Veiculo> listaVeiculo() {
+        return veiculoDAO.findAll();
+    }
 }
