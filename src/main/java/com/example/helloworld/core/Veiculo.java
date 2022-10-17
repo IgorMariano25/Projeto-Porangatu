@@ -19,4 +19,6 @@ public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    // TO DO - nomear coluna das tabelas
 }
