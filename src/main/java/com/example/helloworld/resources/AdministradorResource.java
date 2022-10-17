@@ -21,4 +21,6 @@ public class AdministradorResource {
         public AdministradorResource(AdministradorDAO administradorDAO){
             this.administradorDAO = administradorDAO;
         }
+
+        @POST
 }
