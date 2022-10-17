@@ -26,4 +26,8 @@ public class AdministradorPOJO {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public String getLastName() {
+        return this.lastName;
+    }
 }
