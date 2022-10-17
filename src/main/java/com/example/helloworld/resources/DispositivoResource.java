@@ -28,4 +28,6 @@ public class DispositivoResource {
     public Dispositivo createDispositivo(@Valid Dispositivo dispositivo) {
         return dispositivoDAO.create(dispositivo);
     }
+
+    @GET
 }
