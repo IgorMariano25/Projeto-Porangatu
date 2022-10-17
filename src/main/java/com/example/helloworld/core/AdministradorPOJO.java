@@ -34,4 +34,8 @@ public class AdministradorPOJO {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getJobTitle() {
+        return this.jobTitle;
+    }
 }
