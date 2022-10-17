@@ -11,4 +11,9 @@ public class DispositivoPOJO {
 
     int quantidadeSensores;
     String nomeMotoristaResponsavel;
+
+    public DispositivoPOJO(int quantidadeSensores, String nomeMotoristaResponsavel) {
+        this.quantidadeSensores = quantidadeSensores;
+        this.nomeMotoristaResponsavel = nomeMotoristaResponsavel;
+    }
 }
