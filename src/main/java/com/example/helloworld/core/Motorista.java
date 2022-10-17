@@ -31,4 +31,8 @@ public class Motorista {
     public void setId(long id){
         this.id = id;
     }
+
+    // TO DO getters
+    // TO DO equals
+    // TO DO hashCode
 }
