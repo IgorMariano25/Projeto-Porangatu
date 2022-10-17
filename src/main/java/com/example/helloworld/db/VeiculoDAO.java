@@ -15,4 +15,8 @@ public class VeiculoDAO extends AbstractDAO<Veiculo>{
     public Optional<Veiculo> findById(Long id){
         return Optional.ofNullable(get(id));
     }
+
+    public Veiculo create(Veiculo veiculo) {
+        return persist(veiculo);
+    }
 }
