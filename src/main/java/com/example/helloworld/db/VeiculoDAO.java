@@ -5,6 +5,7 @@ import io.dropwizard.hibernate.AbstractDAO;
 
 import org.hibernate.SessionFactory;
 
+import java.util.List;
 public class VeiculoDAO {
     
 }
