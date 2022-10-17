@@ -10,13 +10,13 @@ package com.example.helloworld.core;
 public class VeiculoPOJO {
     
     String placaVeiculo;
-    String tipo;
+    String tipoVeiculo;
     String modelo;
     String motorista;
 
-    public VeiculoPOJO(String placaVeiculo, String tipo, String modelo, String motorista) {
+    public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modelo, String motorista) {
         this.placaVeiculo = placaVeiculo;
-        this.tipo = tipo;
+        this.tipoVeiculo = tipoVeiculo;
         this.modelo = modelo;
         this.motorista = motorista;
     }
