@@ -29,4 +29,7 @@ public class Veiculo {
     public Veiculo() {
     }
 
+    public void setId(long id){
+        this.id = id;
+    }
 }
