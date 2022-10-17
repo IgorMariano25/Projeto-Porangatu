@@ -28,6 +28,7 @@ public class AdministradorResource {
             return administradorDAO.create(administrador);
         }
 
+        @GET
         public List<Administrador> listaAdministradors() {
             return administradorDAO.findAll();
         }
