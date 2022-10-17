@@ -29,4 +29,5 @@ public class MotoristaResource {
     }
 
     @GET
+    @UnitOfWork
 }
