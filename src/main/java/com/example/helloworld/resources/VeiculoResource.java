@@ -21,4 +21,6 @@ public class VeiculoResource {
     public VeiculoResource(VeiculoDAO veiculoDAO){
         this.veiculoDAO = veiculoDAO;
     }
+
+    @POST
 }
