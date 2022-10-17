@@ -11,7 +11,7 @@ public class VeiculoPOJO {
     
     String placaVeiculo;
     String tipoVeiculo;
-    String modelo;
+    String modeloVeiculo;
     String motorista;
 
     public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modelo, String motorista) {
