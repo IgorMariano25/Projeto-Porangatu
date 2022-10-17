@@ -11,4 +11,8 @@ public class AdministradorPOJO {
     String firstName;
     String lastName;
     String jobTitle;
+
+    public AdministradorPOJO() {
+    }
+
 }
