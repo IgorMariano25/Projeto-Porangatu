@@ -17,4 +17,8 @@ import java.util.List;
 public class AdministradorResource {
     
     private final AdministradorDAO administradorDAO;
+
+        public AdministradorResource(AdministradorDAO administradorDAO){
+            this.administradorDAO = administradorDAO;
+        }
 }
