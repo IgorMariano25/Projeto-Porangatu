@@ -9,5 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class MotoristaDAO extends AbstractDAO<Motorista>{
-    
+    public MotoristaDAO(SessionFactory factory){
+        super(factory);
+    }
 }
