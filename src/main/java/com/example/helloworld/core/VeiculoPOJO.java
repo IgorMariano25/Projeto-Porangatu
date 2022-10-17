@@ -20,4 +20,8 @@ public class VeiculoPOJO {
         this.modeloVeiculo = modeloVeiculo;
         this.motoristaVeiculo = motoristaVeiculo;
     }
+    
+    public String getPlacaVeiculo() {
+        return this.placaVeiculo;
+    }
 }
