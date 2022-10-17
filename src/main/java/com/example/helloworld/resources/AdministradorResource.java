@@ -24,6 +24,10 @@ public class AdministradorResource {
 
         @POST
         @UnitOfWork
+        public Administrador createAdministrador(@Valid.Administrador administrador) {
+            return administradorDAO.create(administrador);
+        }
+
         public List<Administrador> listaAdministradors() {
             return administradorDAO.findAll();
         }
