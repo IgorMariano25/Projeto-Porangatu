@@ -21,4 +21,8 @@ public class Veiculo {
     private long id;
 
     // TO DO - nomear coluna das tabelas
+    @column(name = "", nullable =  false)
+    @column(name = "", nullable =  false)
+    @column(name = "", nullable =  false)
+
 }
