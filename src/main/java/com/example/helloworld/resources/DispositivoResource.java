@@ -31,7 +31,7 @@ public class DispositivoResource {
 
     @GET
     @UnitOfWork
-    public List<Dispositivo> listaDispositovos() {
+    public List<Dispositivo> listaDispositivos() {
         return dispositivoDAO.findAll();
     }
 
