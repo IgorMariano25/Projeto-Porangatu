@@ -32,4 +32,10 @@ public class Veiculo {
     public void setId(long id){
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        String msg = "";
+        return msg;
+    }
 }
