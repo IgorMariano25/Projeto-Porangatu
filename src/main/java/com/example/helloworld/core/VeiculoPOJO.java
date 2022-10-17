@@ -28,4 +28,8 @@ public class VeiculoPOJO {
     public void setPlacaVeiculo(String placaVeiculo) {
         this.placaVeiculo = placaVeiculo;
     }
+
+    public String getTipoVeiculo() {
+        return this.tipoVeiculo;
+    }
 }
