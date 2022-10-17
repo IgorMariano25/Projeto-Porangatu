@@ -32,4 +32,8 @@ public class VeiculoPOJO {
     public String getTipoVeiculo() {
         return this.tipoVeiculo;
     }
+
+    public void setTipoVeiculo(String tipoVeiculo) {
+        this.tipoVeiculo = tipoVeiculo;
+    }
 }
