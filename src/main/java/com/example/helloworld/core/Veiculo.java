@@ -34,7 +34,8 @@ public class Veiculo {
     }
 
     // TO DO getters
-
+    // TO DO equals
+    
     @Override
     public String toString() {
         String msg = "";
