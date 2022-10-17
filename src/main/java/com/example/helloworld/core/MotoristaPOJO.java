@@ -8,5 +8,7 @@ package com.example.helloworld.core;
  */
 
 public class MotoristaPOJO {
-    
+
+    String nome;
+    String cnh;
 }
