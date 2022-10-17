@@ -16,5 +16,5 @@ import java.util.Objects;
     query = "SELECT m FROM m"
 )
 public class Motorista {
-    
+    @Id
 }
