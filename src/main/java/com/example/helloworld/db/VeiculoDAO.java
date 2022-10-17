@@ -8,5 +8,7 @@ import org.hibernate.SessionFactory;
 import java.util.List;
 import java.util.Optional;
 public class VeiculoDAO extends AbstractDAO<Veiculo>{
-    
+    public VeiculoDAO(SessionFactory factory) {
+        super(factory);
+    }
 }
