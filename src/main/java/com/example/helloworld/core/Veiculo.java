@@ -18,4 +18,5 @@ import java.util.Objects;
 public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 }
