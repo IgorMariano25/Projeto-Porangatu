@@ -11,6 +11,8 @@ import javax.ws.rs.POST;
 import javax.validation.Valid;
 import javax.ws.rs.GET;
 import java.util.List;
+
+@Path
 public class DispositivoResource {
     
 }
