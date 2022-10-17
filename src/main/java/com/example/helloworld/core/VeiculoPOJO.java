@@ -12,7 +12,7 @@ public class VeiculoPOJO {
     String placaVeiculo;
     String tipoVeiculo;
     String modeloVeiculo;
-    String motorista;
+    String motoristaVeiculo;
 
     public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modeloVeiculo, String motorista) {
         this.placaVeiculo = placaVeiculo;
