@@ -17,7 +17,7 @@ public class VeiculoPOJO {
     public VeiculoPOJO(String placaVeiculo, String tipoVeiculo, String modeloVeiculo, String motorista) {
         this.placaVeiculo = placaVeiculo;
         this.tipoVeiculo = tipoVeiculo;
-        this.modelo = modelo;
+        this.modeloVeiculo = modeloVeiculo;
         this.motorista = motorista;
     }
 }
