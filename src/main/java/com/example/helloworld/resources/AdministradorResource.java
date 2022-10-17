@@ -30,7 +30,7 @@ public class AdministradorResource {
 
         @GET
         @UnitOfWork
-        public List<Administrador> listaAdministradors() {
+        public List<Administrador> listaAdministradores() {
             return administradorDAO.findAll();
         }
 }
