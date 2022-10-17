@@ -26,6 +26,7 @@ public class Dispositivo {
     @column(name = "", nullable =  false)
 
     // TO DO getters
+    // TO DO equals
 
     public Dispositivo() {
     }
