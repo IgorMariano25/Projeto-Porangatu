@@ -25,4 +25,7 @@ public class DispositivoResource {
 
     @POST
     @UnitOfWork
+    public Dispositivo createDispositivo(@Valid Dispositivo dispositivo) {
+        return dispositivoDAO.create(dispositivo);
+    }
 }
