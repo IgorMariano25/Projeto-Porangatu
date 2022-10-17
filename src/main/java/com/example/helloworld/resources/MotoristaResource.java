@@ -9,6 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.POST;
 import javax.validation.Valid;
+import javax.ws.rs.GET;
 
 public class MotoristaResource {
     
