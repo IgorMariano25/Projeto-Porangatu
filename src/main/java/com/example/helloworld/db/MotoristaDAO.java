@@ -20,4 +20,8 @@ public class MotoristaDAO extends AbstractDAO<Motorista>{
     public Motorista create(Motorista motorista) {
         return persist(motorista);
     }
+
+    public List<Motorista> findAll() {
+        return list(namedTypedQuery("com.example.helloworld.core.Motorista.findAll"));
+    }
 }
