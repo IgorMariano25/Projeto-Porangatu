@@ -19,7 +19,7 @@ public class DispositivoResource {
 
     private final DispositivoDAO dispositivoDAO;
     
-    public DispositivoResource(DispositivoDAO dispositiv) {
+    public DispositivoResource(DispositivoDAO dispositivoDAO) {
         this.dispositivoDAO = dispositivoDAO;
     }
 
