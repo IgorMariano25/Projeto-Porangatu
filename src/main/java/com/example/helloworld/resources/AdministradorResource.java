@@ -7,6 +7,7 @@ import io.dropwizard.hibernate.UnitOfWork;
 import javax.validation.Valid;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.Path;
 public class AdministradorResource {
     
 }
