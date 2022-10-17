@@ -7,6 +7,6 @@ import org.hibernate.SessionFactory;
 
 import java.util.List;
 import java.util.Optional;
-public class VeiculoDAO {
+public class VeiculoDAO extends AbstractDAO<Veiculo>{
     
 }
