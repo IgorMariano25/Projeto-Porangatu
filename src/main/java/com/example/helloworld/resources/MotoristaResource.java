@@ -12,6 +12,7 @@ import javax.validation.Valid;
 import javax.ws.rs.GET;
 import java.util.List;
 
+@Path("/Motorsita")
 public class MotoristaResource {
     
 }
