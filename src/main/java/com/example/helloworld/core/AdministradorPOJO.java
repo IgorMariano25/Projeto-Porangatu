@@ -7,5 +7,8 @@ package com.example.helloworld.core;
  */
 
 public class AdministradorPOJO {
-    
+
+    String firstName;
+    String lastName;
+    String jobTitle;
 }
