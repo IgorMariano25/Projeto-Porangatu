@@ -11,6 +11,10 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Veiculo")
+@NamedQuery(
+    name = "com.example.helloword.core.Veiculo.findAll",
+    query = "SELECT v FROM v"
+)
 public class Veiculo {
     
 }
