@@ -16,4 +16,8 @@ public class MotoristaPOJO {
         this.nome = nome;
         this.cnh = cnh;
     }
+
+    public String getNome() {
+        return this.nome;
+    }
 }
