@@ -28,4 +28,7 @@ public class Motorista {
     public Motorista() {
     }
 
+    public void setId(long id){
+        this.id = id;
+    }
 }
