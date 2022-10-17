@@ -9,7 +9,7 @@ package com.example.helloworld.core;
 
 public class VeiculoPOJO {
     
-    String placa;
+    String placaVeiculo;
     String tipo;
     String modelo;
     String motorista;
