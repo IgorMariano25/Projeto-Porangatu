@@ -38,4 +38,8 @@ public class AdministradorPOJO {
     public String getJobTitle() {
         return this.jobTitle;
     }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
 }
