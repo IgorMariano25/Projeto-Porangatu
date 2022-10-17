@@ -24,4 +24,7 @@ public class VeiculoResource {
 
     @POST
     @UnitOfWork
+    public Veiculo createVeiculo(@Valid Veiculo veiculo) {
+        return veiculoDAO.create(veiculo);
+    }
 }
