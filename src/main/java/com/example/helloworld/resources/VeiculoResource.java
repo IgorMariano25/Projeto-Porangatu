@@ -17,4 +17,8 @@ import java.util.List;
 public class VeiculoResource {
     
     private final VeiculoDAO veiculoDAO;
+
+    public VeiculoResource(VeiculoDAO veiculoDAO){
+        this.veiculoDAO = veiculoDAO;
+    }
 }
