@@ -9,4 +9,8 @@ package com.example.helloworld.core;
 
 public class VeiculoPOJO {
     
+    String placa;
+    String tipo;
+    String modelo;
+    String motorista;
 }
