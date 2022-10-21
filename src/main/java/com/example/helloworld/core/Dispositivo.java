@@ -20,10 +20,12 @@ public class Dispositivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    // TO DO - nomear coluna das tabelas
-    @column(name = "", nullable =  false)
-    @column(name = "", nullable =  false)
-    @column(name = "", nullable =  false)
+    // TODO - nomear coluna das tabelas
+    @Column(name = "tipo", nullable =  false)
+    private String tipo;
+
+    @Column(name = "sensores", nullable =  false)
+    private String sensores;
 
     public Dispositivo() {
     }
