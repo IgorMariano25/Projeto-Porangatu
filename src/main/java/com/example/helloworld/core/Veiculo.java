@@ -61,6 +61,10 @@ public class Veiculo {
     public void setTipoVeiculo(String tipoVeiculo) {
         this.tipoVeiculo = tipoVeiculo;
     }
+
+    public String getTipoCarga() {
+        return this.tipoCarga;
+    }
     
     @Override
     public String toString() {
