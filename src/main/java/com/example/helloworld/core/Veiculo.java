@@ -22,7 +22,7 @@ public class Veiculo {
 
     // TODO - nomear coluna das tabelas
     @Column(name = "numeroPlaca", nullable =  false)
-    private String tipoVeiculo;
+    private String numeroPlaca;
 
     @Column(name = "tipoVeiculo", nullable =  false)
     private String tipoVeiculo;
