@@ -45,6 +45,11 @@ public class Dispositivo {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public String getSensores() {
+        return this.sensores;
+    }
+
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
