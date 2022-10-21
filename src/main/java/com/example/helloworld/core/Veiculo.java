@@ -27,7 +27,8 @@ public class Veiculo {
     @Column(name = "tipoVeiculo", nullable =  false)
     private String tipoVeiculo;
 
-    @Column(name = "", nullable =  false)
+    @Column(name = "tipoCarga", nullable =  false)
+    private String tipoCarga;
 
 
     public Veiculo() {
