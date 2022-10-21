@@ -23,9 +23,11 @@ public class Veiculo {
     // TODO - nomear coluna das tabelas
     @Column(name = "numeroPlaca", nullable =  false)
     private String tipoVeiculo;
+
+    @Column(name = "tipoVeiculo", nullable =  false)
+    private Strin tipoVeiculo;
     
-    @column(name = "", nullable =  false)
-    @column(name = "", nullable =  false)
+    @Column(name = "", nullable =  false)
 
 
     public Veiculo() {
