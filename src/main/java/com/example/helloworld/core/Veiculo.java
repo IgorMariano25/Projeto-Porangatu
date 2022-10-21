@@ -38,10 +38,6 @@ public class Veiculo {
         this.id = id;
     }
 
-    // TO DO getters
-    // TO DO equals
-    // TO DO hashCode
-
     public long getId() {
         return this.id;
     }
@@ -65,7 +61,7 @@ public class Veiculo {
     public String getTipoCarga() {
         return this.tipoCarga;
     }
-    
+
     @Override
     public String toString() {
         String msg = "";
@@ -84,5 +80,10 @@ public class Veiculo {
         Objects.equals(numeroPlaca, veiculo.numeroPlaca) && 
         Objects.equals(tipoVeiculo, veiculo.tipoVeiculo) && 
         Objects.equals(tipoCarga, veiculo.tipoCarga);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, numeroPlaca, tipoVeiculo, tipoCarga);
     }
 }
