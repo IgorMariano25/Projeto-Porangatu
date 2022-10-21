@@ -20,7 +20,6 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    // TODO - nomear coluna das tabelas
     @Column(name = "numeroPlaca", nullable =  false)
     private String numeroPlaca;
 
