@@ -54,6 +54,10 @@ public class Veiculo {
         this.numeroPlaca = numeroPlaca;
     }
 
+    public String getTipoVeiculo() {
+        return this.tipoVeiculo;
+    }
+
     @Override
     public String toString() {
         String msg = "";
