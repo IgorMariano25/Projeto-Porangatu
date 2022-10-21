@@ -33,9 +33,13 @@ public class Dispositivo {
     public void setId(long id){
         this.id = id;
     }
-    
+
     public long getId() {
         return this.id;
+    }
+
+    public String getTipo() {
+        return this.tipo;
     }
     // TO DO getters
     // TO DO equals
