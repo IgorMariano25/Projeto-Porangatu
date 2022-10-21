@@ -53,8 +53,18 @@ public class Dispositivo {
     public void setSensores(String sensores) {
         this.sensores = sensores;
     }
-    
-    // TO DO getters
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Dispositivo)) {
+            return false;
+        }
+        Dispositivo dispositivo = (Dispositivo) o;
+        return id == dispositivo.id && Objects.equals(tipo, dispositivo.tipo) && Objects.equals(sensores, dispositivo.sensores);
+    }
+
     // TO DO equals
     // TO DO hashCode
 
