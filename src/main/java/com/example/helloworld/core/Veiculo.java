@@ -50,6 +50,10 @@ public class Veiculo {
         return this.numeroPlaca;
     }
 
+    public void setNumeroPlaca(String numeroPlaca) {
+        this.numeroPlaca = numeroPlaca;
+    }
+
     @Override
     public String toString() {
         String msg = "";
