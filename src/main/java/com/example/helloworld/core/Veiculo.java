@@ -46,6 +46,10 @@ public class Veiculo {
         return this.id;
     }
 
+    public String getNumeroPlaca() {
+        return this.numeroPlaca;
+    }
+
     @Override
     public String toString() {
         String msg = "";
