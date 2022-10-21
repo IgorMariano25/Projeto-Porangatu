@@ -65,6 +65,11 @@ public class Dispositivo {
         return id == dispositivo.id && Objects.equals(tipo, dispositivo.tipo) && Objects.equals(sensores, dispositivo.sensores);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, tipo, sensores);
+    }
+    
     // TO DO equals
     // TO DO hashCode
 
