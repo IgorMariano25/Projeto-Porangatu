@@ -50,6 +50,10 @@ public class Dispositivo {
         return this.sensores;
     }
 
+    public void setSensores(String sensores) {
+        this.sensores = sensores;
+    }
+    
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
