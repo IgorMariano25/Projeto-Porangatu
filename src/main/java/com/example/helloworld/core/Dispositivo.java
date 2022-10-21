@@ -33,7 +33,10 @@ public class Dispositivo {
     public void setId(long id){
         this.id = id;
     }
-
+    
+    public long getId() {
+        return this.id;
+    }
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
