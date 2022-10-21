@@ -71,4 +71,18 @@ public class Veiculo {
         String msg = "";
         return msg;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Veiculo)) {
+            return false;
+        }
+        Veiculo veiculo = (Veiculo) o;
+        return id == veiculo.id && 
+        Objects.equals(numeroPlaca, veiculo.numeroPlaca) && 
+        Objects.equals(tipoVeiculo, veiculo.tipoVeiculo) && 
+        Objects.equals(tipoCarga, veiculo.tipoCarga);
+    }
 }
