@@ -6,14 +6,22 @@ import com.example.helloworld.cli.RenderCommand;
 import com.example.helloworld.core.Person;
 import com.example.helloworld.core.Template;
 import com.example.helloworld.core.User;
+import com.example.helloworld.db.AdministradorDAO;
+import com.example.helloworld.db.DispositivoDAO;
+import com.example.helloworld.db.MotoristaDAO;
 import com.example.helloworld.db.PersonDAO;
+import com.example.helloworld.db.VeiculoDAO;
 import com.example.helloworld.filter.DateRequiredFeature;
 import com.example.helloworld.health.TemplateHealthCheck;
+import com.example.helloworld.resources.AdministradorResource;
+import com.example.helloworld.resources.DispositivoResource;
 import com.example.helloworld.resources.FilteredResource;
 import com.example.helloworld.resources.HelloWorldResource;
+import com.example.helloworld.resources.MotoristaResource;
 import com.example.helloworld.resources.PeopleResource;
 import com.example.helloworld.resources.PersonResource;
 import com.example.helloworld.resources.ProtectedResource;
+import com.example.helloworld.resources.VeiculoResource;
 import com.example.helloworld.resources.ViewResource;
 import com.example.helloworld.tasks.EchoTask;
 import io.dropwizard.Application;
@@ -81,6 +89,10 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     @Override
     public void run(HelloWorldConfiguration configuration, Environment environment) {
         final PersonDAO dao = new PersonDAO(hibernateBundle.getSessionFactory());
+        final AdministradorDAO admDAO = new AdministradorDAO(hibernateBundle.getSessionFactory());
+        final DispositivoDAO disDAO = new DispositivoDAO(hibernateBundle.getSessionFactory());
+        final VeiculoDAO veiDAO =  new VeiculoDAO(hibernateBundle.getSessionFactory());
+        final MotoristaDAO motoDAO = new MotoristaDAO(hibernateBundle.getSessionFactory());
         final Template template = configuration.buildTemplate();
 
         environment.healthChecks().register("template", new TemplateHealthCheck(template));
@@ -99,5 +111,9 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         environment.jersey().register(new PeopleResource(dao));
         environment.jersey().register(new PersonResource(dao));
         environment.jersey().register(new FilteredResource());
+        environment.jersey().register(new AdministradorResource(admDAO));
+        environment.jersey().register(new DispositivoResource(disDAO));
+        environment.jersey().register(new VeiculoResource(veiDAO));
+        environment.jersey().register(new MotoristaResource(motoDAO));
     }
 }
