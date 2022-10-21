@@ -58,6 +58,10 @@ public class Veiculo {
         return this.tipoVeiculo;
     }
 
+    public void setTipoVeiculo(String tipoVeiculo) {
+        this.tipoVeiculo = tipoVeiculo;
+    }
+    
     @Override
     public String toString() {
         String msg = "";
