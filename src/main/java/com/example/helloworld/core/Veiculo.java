@@ -42,6 +42,10 @@ public class Veiculo {
     // TO DO equals
     // TO DO hashCode
 
+    public long getId() {
+        return this.id;
+    }
+
     @Override
     public String toString() {
         String msg = "";
