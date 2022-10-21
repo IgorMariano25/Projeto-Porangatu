@@ -20,7 +20,6 @@ public class Dispositivo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    // TODO - nomear coluna das tabelas
     @Column(name = "tipo", nullable =  false)
     private String tipo;
 
@@ -69,9 +68,6 @@ public class Dispositivo {
     public int hashCode() {
         return Objects.hash(id, tipo, sensores);
     }
-    
-    // TO DO equals
-    // TO DO hashCode
 
     @Override
     public String toString() {
