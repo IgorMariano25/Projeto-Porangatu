@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 
 import java.util.List;
 import java.util.Optional;
+
 public class AdministradorDAO extends AbstractDAO<Administrador> {
     public AdministradorDAO(SessionFactory factory) {
         super(factory);
