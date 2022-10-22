@@ -52,6 +52,11 @@ public class Motorista {
         Motorista motorista = (Motorista) o;
         return id == motorista.id && Objects.equals(cnh, motorista.cnh);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, cnh);
+    }
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
