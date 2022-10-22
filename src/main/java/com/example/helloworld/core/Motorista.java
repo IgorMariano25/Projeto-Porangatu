@@ -30,38 +30,14 @@ public class Motorista {
         this.id = id;
     }
 
-    public long getId() {
-        return this.id;
-    }
+    // TO DO getters
+    // TO DO equals
+    // TO DO hashCode
 
-    public String getCnh() {
-        return this.cnh;
-    }
-
-    public void setCnh(String cnh) {
-        this.cnh = cnh;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof Motorista)) {
-            return false;
-        }
-        Motorista motorista = (Motorista) o;
-        return id == motorista.id && Objects.equals(cnh, motorista.cnh);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, cnh);
-    }
     // TODO: Adicionar mensagem de exibição neste método
     @Override
     public String toString() {
         String msg = "";
-        msg += "A cnh do motorista é: " + this.cnh;
         return msg;
     }
 }
