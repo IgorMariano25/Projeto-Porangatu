@@ -3,6 +3,7 @@ package com.example.helloworld;
 import com.example.helloworld.auth.ExampleAuthenticator;
 import com.example.helloworld.auth.ExampleAuthorizer;
 import com.example.helloworld.cli.RenderCommand;
+import com.example.helloworld.core.Administrador;
 import com.example.helloworld.core.Person;
 import com.example.helloworld.core.Template;
 import com.example.helloworld.core.User;
@@ -47,12 +48,14 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     }
 
     private final HibernateBundle<HelloWorldConfiguration> hibernateBundle =
-        new HibernateBundle<HelloWorldConfiguration>(Person.class) {
+        new HibernateBundle<HelloWorldConfiguration>(Person.class, Administrador.class) {
             @Override
             public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration configuration) {
                 return configuration.getDataSourceFactory();
             }
         };
+
+
 
     @Override
     public String getName() {
