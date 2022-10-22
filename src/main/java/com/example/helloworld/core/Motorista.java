@@ -30,6 +30,9 @@ public class Motorista {
         this.id = id;
     }
 
+    public long getId() {
+        return this.id;
+    }
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
