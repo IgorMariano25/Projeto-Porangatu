@@ -57,10 +57,6 @@ public class Motorista {
     public int hashCode() {
         return Objects.hash(id, cnh);
     }
-    // TO DO getters
-    // TO DO equals
-    // TO DO hashCode
-
     // TODO: Adicionar mensagem de exibição neste método
     @Override
     public String toString() {
