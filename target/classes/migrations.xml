@@ -99,5 +99,12 @@
             </column>
             <column name="dt_fim" type="date"/>
         </createTable>
+    </changeSet>
+    <changeSet id="10" author="Clarissa">
+        <addColumn tableName="motorista">
+            <column name="id_pessoa" type="bigint">
+                <constraints nullable="false" foreignKeyName="fk_id_pessoa_motorista" references="pessoa(id)"/>
+            </column>
+        </addColumn>
     </changeSet>    
 </databaseChangeLog>
