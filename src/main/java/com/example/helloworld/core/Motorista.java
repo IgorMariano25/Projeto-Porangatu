@@ -61,6 +61,7 @@ public class Motorista {
     @Override
     public String toString() {
         String msg = "";
+        msg += "A cnh do motorista é: " + this.cnh;
         return msg;
     }
 }
