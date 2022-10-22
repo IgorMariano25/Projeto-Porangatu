@@ -101,10 +101,10 @@
         </createTable>
     </changeSet>
     <changeSet id="10" author="Clarissa">
-        <addCollumn tableName="motorista">
+        <addColumn tableName="motorista">
             <column name="id_pessoa" type="bigint">
                 <constraints nullable="false" foreignKeyName="fk_id_pessoa_motorista" references="pessoa(id)"/>
             </column>
-        </addCollumn>
+        </addColumn>
     </changeSet>    
 </databaseChangeLog>
