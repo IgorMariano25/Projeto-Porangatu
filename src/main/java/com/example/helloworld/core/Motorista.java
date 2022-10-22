@@ -33,6 +33,10 @@ public class Motorista {
     public long getId() {
         return this.id;
     }
+
+    public String getCnh() {
+        return this.cnh;
+    }
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
