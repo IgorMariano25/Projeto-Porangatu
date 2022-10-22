@@ -4,6 +4,7 @@ C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\db\Veicul
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\User.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\PeopleResource.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Veiculo.java
+C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\VeiculoPOJO.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Administrador.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\HelloWorldConfiguration.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Dispositivo.java
@@ -11,8 +12,10 @@ C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\filter\Da
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\views\PersonView.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\HelloWorldResource.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Template.java
+C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\AdministradorPOJO.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\DispositivoResource.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\cli\RenderCommand.java
+C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\DispositivoPOJO.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\VeiculoResource.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\db\AdministradorDAO.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Motorista.java
@@ -27,6 +30,7 @@ C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\HelloWorldApplication.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\PersonResource.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\auth\ExampleAuthorizer.java
+C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\MotoristaPOJO.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\core\Person.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\tasks\EchoTask.java
 C:\Users\igor-\dropwizard-example\src\main\java\com\example\helloworld\resources\MotoristaResource.java
