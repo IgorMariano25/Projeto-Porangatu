@@ -42,6 +42,16 @@ public class Motorista {
         this.cnh = cnh;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Motorista)) {
+            return false;
+        }
+        Motorista motorista = (Motorista) o;
+        return id == motorista.id && Objects.equals(cnh, motorista.cnh);
+    }
     // TO DO getters
     // TO DO equals
     // TO DO hashCode
