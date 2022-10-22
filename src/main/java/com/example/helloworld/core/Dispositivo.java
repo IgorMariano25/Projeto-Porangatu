@@ -69,6 +69,7 @@ public class Dispositivo {
         return Objects.hash(id, tipo, sensores);
     }
 
+    // TODO: Adicionar mensagem de exibição neste método
     @Override
     public String toString() {
         String msg = "";

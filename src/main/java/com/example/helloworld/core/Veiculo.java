@@ -61,6 +61,7 @@ public class Veiculo {
         return this.tipoCarga;
     }
 
+    // TODO: Adicionar mensagem de exibição neste método
     @Override
     public String toString() {
         String msg = "";
