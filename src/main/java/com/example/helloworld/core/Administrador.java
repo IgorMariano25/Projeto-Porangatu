@@ -10,7 +10,7 @@ import javax.persistence.Column;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Administrador")
+@Table(name = "administrador")
 @NamedQuery(
     name = "com.example.helloworld.core.Administrador.findAll",
     query = "SELECT a FROM Administrador a"
@@ -20,38 +20,26 @@ public class Administrador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "firstName", nullable = false)
-    private String firstName;
-
-    @Column(name = "lastName", nullable = false)
-    private String lastName;
-
-    @Column(name = "jobTitle", nullable = false)
-    private String jobTitle;
+    @Column(name = "credencial", nullable = false)
+    private String credencial;
 
     public Administrador() {
     }
 
-    public Administrador(String firstName, String lastName, String jobTitle){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.jobTitle = jobTitle;
+    public Administrador(String credencial){
+        this.credencial = credencial;
     }
 
     public void setId(long id){
         this.id = id;
     }
 
-    public void getFirstName(String firstName){
-        this.firstName = firstName;
+    public long getId() {
+        return id;
     }
 
-    public void getLastName(String lastName){
-        this.lastName = lastName;
-    }
-
-    public void getJobTitle(String jobTitle){
-        this.jobTitle = jobTitle;
+    public String getCredencial() {
+        return credencial;
     }
 
     @Override
@@ -63,21 +51,17 @@ public class Administrador {
         }
         Administrador administrador = (Administrador) o;
         return id == administrador.id && 
-                Objects.equals(firstName, administrador.firstName) && 
-                Objects.equals(lastName, administrador.lastName) && 
-                Objects.equals(jobTitle, administrador.jobTitle);
+                Objects.equals(credencial, administrador.credencial);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, jobTitle);
+        return Objects.hash(id, credencial);
     }
 
     @Override
     public String toString() {
-        String msg = "Administrator first name: " + this.firstName;
-               msg += "Administrator last name: " + this.lastName;
-               msg += "Administrator jobTitle: " + this.jobTitle;
+        String msg = "Administrator credencial: " + this.credencial;
         return msg;
     }
 }
