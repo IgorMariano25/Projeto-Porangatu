@@ -13,7 +13,7 @@ import java.util.Objects;
 @Table(name = "Veiculo")
 @NamedQuery(
     name = "com.example.helloword.core.Veiculo.findAll",
-    query = "SELECT v FROM v"
+    query = "SELECT v FROM Veiculo v"
 )
 public class Veiculo {
     @Id
