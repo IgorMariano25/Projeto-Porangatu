@@ -5,6 +5,7 @@ import com.example.helloworld.db.PersonDAO;
 import com.example.helloworld.views.PersonView;
 import io.dropwizard.hibernate.UnitOfWork;
 
+import javax.validation.Valid;
 import javax.ws.rs.BadRequestException;
 import javax.ws.rs.GET;
 import javax.ws.rs.NotFoundException;
