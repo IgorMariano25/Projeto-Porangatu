@@ -26,6 +26,12 @@ public class PersonResource {
         this.personDAO = personDAO;
     }
 
+    @PUT
+    @UnitOfWork
+    public Person updatePerson(@Valid Person person){
+        return personDAO.update(person);
+    }
+
     @GET
     @UnitOfWork
     public Person getPerson(@PathParam("personId") OptionalLong personId) {
