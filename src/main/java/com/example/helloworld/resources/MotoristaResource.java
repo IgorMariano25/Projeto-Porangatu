@@ -28,6 +28,12 @@ public class MotoristaResource {
         return motoristaDAO.create(motorista);
     }
 
+    @PUT
+    @UnitOfWork
+    public Motorista updateDispositivo(@Valid Motorista motorista){
+        return motoristaDAO.update(motorista);
+    }
+
     @GET
     @UnitOfWork
     public List<Motorista> listaMotoristas() {
