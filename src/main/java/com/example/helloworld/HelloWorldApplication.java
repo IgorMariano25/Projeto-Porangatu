@@ -4,9 +4,12 @@ import com.example.helloworld.auth.ExampleAuthenticator;
 import com.example.helloworld.auth.ExampleAuthorizer;
 import com.example.helloworld.cli.RenderCommand;
 import com.example.helloworld.core.Administrador;
+import com.example.helloworld.core.Dispositivo;
+import com.example.helloworld.core.Motorista;
 import com.example.helloworld.core.Person;
 import com.example.helloworld.core.Template;
 import com.example.helloworld.core.User;
+import com.example.helloworld.core.Veiculo;
 import com.example.helloworld.db.AdministradorDAO;
 import com.example.helloworld.db.DispositivoDAO;
 import com.example.helloworld.db.MotoristaDAO;
@@ -48,7 +51,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     }
 
     private final HibernateBundle<HelloWorldConfiguration> hibernateBundle =
-        new HibernateBundle<HelloWorldConfiguration>(Person.class, Administrador.class) {
+        new HibernateBundle<HelloWorldConfiguration>(Person.class, Administrador.class, Motorista.class, Dispositivo.class, Veiculo.class) {
             @Override
             public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration configuration) {
                 return configuration.getDataSourceFactory();

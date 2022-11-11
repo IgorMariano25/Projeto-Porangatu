@@ -12,7 +12,7 @@ import javax.persistence.Column;
 @Table(name = "Motorista")
 @NamedQuery(
     name = "com.example.helloworld.core.Motorista.findAll",
-    query = "SELECT m FROM m"
+    query = "SELECT m FROM Motorista m"
 )
 public class Motorista {
     @Id
