@@ -23,4 +23,8 @@ public class DispositivoDAO extends AbstractDAO<Dispositivo>{
     public List<Dispositivo> findAll() {
         return list(namedTypedQuery("com.example.helloworld.core.Dispositivo.findAll"));
     }
+
+    public Dispositivo update(Dispositivo dispositivo){
+        return persist(dispositivo);
+    }
 }

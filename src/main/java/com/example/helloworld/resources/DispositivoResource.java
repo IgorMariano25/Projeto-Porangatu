@@ -13,6 +13,7 @@ import javax.ws.rs.POST;
 import javax.validation.Valid;
 import javax.ws.rs.BadRequestException;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.NotFoundException;
 
 import java.util.List;
@@ -45,6 +46,12 @@ public class DispositivoResource {
     @UnitOfWork
     public Dispositivo getDispositivo(@PathParam("dispositivoId") OptionalLong dispositivoId){
     return findSafely(dispositivoId.orElseThrow(() -> new BadRequestException("ID do dispositivo é obrigatório!")));
+    }
+
+    @PUT
+    @UnitOfWork
+    public Dispositivo updateDispositivo(@Valid Dispositivo dispositivo){
+        return dispositivoDAO.update(dispositivo);
     }
 
     private Dispositivo findSafely(long dispositivoId) {
