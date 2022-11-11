@@ -20,10 +20,10 @@ import java.util.OptionalLong;
 @Produces(MediaType.APPLICATION_JSON)
 public class PersonResource {
 
-    private final PersonDAO peopleDAO;
+    private final PersonDAO personDAO;
 
-    public PersonResource(PersonDAO peopleDAO) {
-        this.peopleDAO = peopleDAO;
+    public PersonResource(PersonDAO personDAO) {
+        this.personDAO = personDAO;
     }
 
     @GET
@@ -49,6 +49,6 @@ public class PersonResource {
     }
 
     private Person findSafely(long personId) {
-        return peopleDAO.findById(personId).orElseThrow(() -> new NotFoundException("No such user."));
+        return personDAO.findById(personId).orElseThrow(() -> new NotFoundException("No such user."));
     }
 }
