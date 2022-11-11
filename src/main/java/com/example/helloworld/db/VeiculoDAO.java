@@ -23,4 +23,8 @@ public class VeiculoDAO extends AbstractDAO<Veiculo>{
     public List<Veiculo> findAll() {
         return list(namedTypedQuery("com.example.helloworld.core.Veiculo.findAll"));
     }
+
+    public Veiculo update(Veiculo veiculo){
+        return persist(veiculo);
+    }
 }
