@@ -15,6 +15,7 @@ import java.util.Objects;
     name = "com.example.helloworld.core.Dispositivo.findAll",
     query = "SELECT d FROM Dispositivo d"
 )
+
 public class Dispositivo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

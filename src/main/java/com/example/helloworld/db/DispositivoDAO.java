@@ -4,6 +4,7 @@ import com.example.helloworld.core.Dispositivo;
 import io.dropwizard.hibernate.AbstractDAO;
 
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,5 +27,9 @@ public class DispositivoDAO extends AbstractDAO<Dispositivo>{
 
     public Dispositivo update(Dispositivo dispositivo){
         return persist(dispositivo);
+    }
+
+    public void delete(Dispositivo dispositivo){
+        currentSession().delete(dispositivo);
     }
 }
