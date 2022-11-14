@@ -28,4 +28,8 @@ public class MotoristaDAO extends AbstractDAO<Motorista>{
     public Motorista update(Motorista motorista){
         return persist(motorista);
     }
+
+    public void delete(Motorista motorista){
+        currentSession().delete(motorista);
+    }
 }

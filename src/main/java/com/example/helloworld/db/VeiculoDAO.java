@@ -27,4 +27,8 @@ public class VeiculoDAO extends AbstractDAO<Veiculo>{
     public Veiculo update(Veiculo veiculo){
         return persist(veiculo);
     }
+
+    public void delete(Veiculo veiculo){
+        currentSession().delete(veiculo);
+    }
 }

@@ -8,6 +8,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 import java.util.Optional;
+
 public class DispositivoDAO extends AbstractDAO<Dispositivo>{
     public DispositivoDAO(SessionFactory factory){
         super(factory);
